@@ -2,7 +2,7 @@
   Main Menu Theme Selector 2.0  (formerly "Colour Selector")
   -----------------------------------------------------
   Original idea / v1 by EmperorGesar.  v2 changes:
-   * Lives in the Game settings tab as ONE compact row ("Main Menu Look") under the Game Speed options.
+   * Lives in the Game settings tab as ONE compact row ("Main Menu Theme") under the Game Speed options.
      It opens a panel (inside the normal settings box) with every control, so nothing runs off screen.
    * A colour you pick yourself ALWAYS wins over the main menu theme of any other mod (Lost Edition, ArtBox, Grab Bag ...).
      "Auto" on a colour means "use the theme".
@@ -359,7 +359,7 @@ local function panel_nodes()
   for i, e in ipairs(logos) do l_labels[i] = e.label; if e.id == cfg.logo then l_cur = i end end
   return {
     { n = G.UIT.R, config = { align = 'cm', padding = 0.04 }, nodes = {
-      { n = G.UIT.T, config = { text = 'Main Menu Look', scale = 0.55, colour = G.C.UI.TEXT_LIGHT, shadow = true } } } },
+      { n = G.UIT.T, config = { text = 'Main Menu Theme', scale = 0.55, colour = G.C.UI.TEXT_LIGHT, shadow = true } } } },
     section('Outer Colour', 1),
     section('Inner Colour', 2),
     { n = G.UIT.R, config = { align = 'cm', padding = 0.02 }, nodes = {
@@ -401,7 +401,7 @@ function G.UIDEF.settings_tab(tab)
       end
     end
     local row = { n = G.UIT.R, config = { align = 'cm', padding = 0.02 }, nodes = {
-      UIBox_button({ button = 'csel_open', label = { 'Main Menu Look' }, minw = 4.2, minh = 0.5, scale = 0.38, colour = G.C.BLUE,
+      UIBox_button({ button = 'csel_open', label = { 'Main Menu Theme' }, minw = 4.2, minh = 0.5, scale = 0.38, colour = G.C.BLUE,
         focus_args = { nav = 'wide' } }) } }
     table.insert(setting_tab.nodes, 2, row)
   end

@@ -1,4 +1,4 @@
--- Saved automatically by Steamodded when you change something in the Main Menu Look panel.
+-- Saved automatically by Steamodded when you change something in the Main Menu Theme panel.
 return {
   c1 = 'auto',    -- outer background colour:  'auto' or a palette key (RED, BLUE, ... RAND1, RAND2)
   c2 = 'auto',    -- inner background colour
